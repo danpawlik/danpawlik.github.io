@@ -76,10 +76,6 @@ module.exports = {
               label: 'Pagure',
               href: 'https://pagure.io/user/danpawlik',
             },
-            {
-              label: 'Copr',
-              href: 'https://copr.fedorainfracloud.org/coprs/danpawlik/',
-            },
           ],
         },
         {
