@@ -105,17 +105,17 @@ module.exports = {
   },
   presets: [
     [
-      '@docusaurus/preset-bootstrap',
+      '@docusaurus/preset-classic',
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/danpawlik/danpawlik.github.io/edit/master/website/',
+            'https://github.com/danpawlik/danpawlik.github.io/edit/docusaurus/website/',
         },
         blog: {
           showReadingTime: true,
           editUrl:
-            'https://github.com/danpawlik/danpawlik.github.io/edit/master/website/blog',
+            'https://github.com/danpawlik/danpawlik.github.io/edit/docusaurus/website/blog',
         },
       },
     ],
