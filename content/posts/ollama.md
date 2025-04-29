@@ -1,27 +1,40 @@
 ---
-title: "Ollama on Intel Arc"
-date: 2025-04-29T15:00:01+00:00
+title: "Running Ollama on Intel Arc"
+date: '2025-04-29T16:54:04+02:00'
+# weight: 1
+# aliases: ["/first"]
 tags: ["first"]
-author: "Dan"
+author: "Me"
+# author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Checking OLLAMA on Intel Arc GPU"
+description: "Desc Text."
+canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: false
 disableHLJS: false
 hideSummary: false
-# searchHidden: true
+searchHidden: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
+cover:
+    image: "<image path/url>" # image path/url
+    alt: "<alt text>" # alt text
+    caption: "<text>" # display caption under cover
+    relative: false # when using page bundles set this to true
+    hidden: true # only hide on current single page
+editPost:
+    URL: "https://github.com/<path_to_repo>/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
 ---
-
 # Introduction
 
 The Ollama framework is used for running and managing large languagel models (LLMs)
@@ -32,14 +45,12 @@ so it raises some complications to start working on Ollama.
 Let's see if the framework can be running on my laptop and let' try to make
 some exploration with available models.
 
-
 ## System details
 
 As I mentioned, my working laptop is: Lenovo P1 G7. Below screen shoot from
 fastfetch (neofetch is not developed anymore :( )
 
-![fastfetch](./images/01-fastfetch.jpg)
-
+![fastfetch](../../images/01-fastfetch.jpg)
 
 ## Is possible to run Ollama without Intel fork? Let's see
 
@@ -49,11 +60,11 @@ Before that, let' see what the script is [doing](https://ollama.com/install.sh)
 
 Note: I was not aware about the main requirements for the Ollama, which is: CUDA.
 
-![ollama-install](./images/02-ollama-install.jpg)
+![ollama-install](../../images/02-ollama-install.jpg)
 
 And after executing script...
 
-![ollama-install](./images/03-oolama-fail.jpg)
+![ollama-install](../../images/03-oolama-fail.jpg)
 
 ```shell
 ~ ❯ curl -fsSL https://ollama.com/install.sh | sh                                                                                                     ✘ 0|INT 14s 15:37:49

@@ -2,26 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://danpawlik.github.io/archetypes/</loc>
-    <lastmod>2025-04-29T15:00:01+00:00</lastmod>
-  </url><url>
     <loc>https://danpawlik.github.io/</loc>
-    <lastmod>2025-04-29T15:00:01+00:00</lastmod>
+    <lastmod>2025-04-29T16:54:04+02:00</lastmod>
   </url><url>
     <loc>https://danpawlik.github.io/tags/first/</loc>
-    <lastmod>2025-04-29T11:00:01+00:00</lastmod>
-  </url><url>
-    <loc>https://danpawlik.github.io/archetypes/hello-world/</loc>
-    <lastmod>2025-04-29T11:00:01+00:00</lastmod>
-  </url><url>
-    <loc>https://danpawlik.github.io/tags/</loc>
-    <lastmod>2025-04-29T11:00:01+00:00</lastmod>
-  </url><url>
-    <loc>https://danpawlik.github.io/posts/hello-world-3/</loc>
-    <lastmod>2025-04-29T11:00:02+00:01</lastmod>
+    <lastmod>2025-04-29T16:54:04+02:00</lastmod>
   </url><url>
     <loc>https://danpawlik.github.io/posts/</loc>
-    <lastmod>2025-04-29T11:00:02+00:01</lastmod>
+    <lastmod>2025-04-29T16:54:04+02:00</lastmod>
+  </url><url>
+    <loc>https://danpawlik.github.io/posts/ollama/</loc>
+    <lastmod>2025-04-29T16:54:04+02:00</lastmod>
+  </url><url>
+    <loc>https://danpawlik.github.io/tags/</loc>
+    <lastmod>2025-04-29T16:54:04+02:00</lastmod>
   </url><url>
     <loc>https://danpawlik.github.io/categories/</loc>
   </url>

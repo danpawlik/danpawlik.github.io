@@ -1,4 +1,4 @@
-baseURL: https://danpawlik.github.io/
+baseURL: "https://danpawlik.github.io/"
 languageCode: en-us
 title: Dan Pawlik blog site
 theme: PaperMod
