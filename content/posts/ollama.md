@@ -94,3 +94,37 @@ After quick Googling, I spotted some project on Github that might be interesting
 and can "fit" my requirement - it was Intel Ipex llm available [here](https://github.com/intel/ipex-llm).
 Of course there are many projects in Google, that are possitioned higher than
 this one - right now AI is very hot topic.
+
+### Installation
+
+There is no rpm package available (I'm using Fedora 41), so I will run
+the binary directly after unpacking the archive.
+
+Download the archive from Github project release [page](https://github.com/ipex-llm/ipex-llm/releases/) - Ipex LLM:
+
+```shell
+curl -LO https://github.com/ipex-llm/ipex-llm/releases/download/v2.3.0-nightly/ollama-ipex-llm-2.3.0b20250415-ubuntu.tgz
+```
+
+After download, unpack:
+
+```shell
+tar xaf ollama-ipex-llm-2.3.0b20250415-ubuntu.tgz
+```
+
+Then go to the directly and start the `Ollama server` by executing:
+
+```shell
+./ollama serve
+```
+
+![ollama-serve](../../images/04-oolama-serve.jpg)
+
+For making simply test for some programming question, I will use a `codellama:13b` model
+available [here](https://ollama.com/library/codellama:13b).
+More models with the description are available in the catalog [page](https://ollama.com/library?sort=popular).
+
+![ollama-codellama](../../images/05-oolama-codellama.jpg)
+
+That's all for that blog post. In next post I will try to show how the codellama works
+with simply queries.
