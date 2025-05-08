@@ -50,7 +50,7 @@ some exploration with available models.
 As I mentioned, my working laptop is: Lenovo P1 G7. Below screen shoot from
 fastfetch (neofetch is not developed anymore :( )
 
-![fastfetch](../../images/01-fastfetch.jpg)
+![fastfetch](../../posts/images/01-fastfetch.jpg)
 
 ## Is possible to run Ollama without Intel fork? Let's see
 
@@ -60,11 +60,11 @@ Before that, let' see what the script is [doing](https://ollama.com/install.sh)
 
 Note: I was not aware about the main requirements for the Ollama, which is: CUDA.
 
-![ollama-install](../../images/02-ollama-install.jpg)
+![ollama-install](../../posts/images/02-ollama-install.jpg)
 
 And after executing script...
 
-![ollama-install](../../images/03-oolama-fail.jpg)
+![ollama-install](../../posts/images/03-oolama-fail.jpg)
 
 ```shell
 ~ ❯ curl -fsSL https://ollama.com/install.sh | sh                                                                                                     ✘ 0|INT 14s 15:37:49
@@ -118,7 +118,7 @@ Then go to the directly and start the `Ollama server` by executing:
 ./ollama serve
 ```
 
-![ollama-serve](../../images/posts/04-oolama-serve.jpg)
+![ollama-codellama](../../posts/images/04-oolama-serve.jpg)
 
 For making simply test for some programming question, I will use a `codellama:13b` model
 available [here](https://ollama.com/library/codellama:13b).
