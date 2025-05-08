@@ -118,13 +118,13 @@ Then go to the directly and start the `Ollama server` by executing:
 ./ollama serve
 ```
 
-![ollama-serve](../../images/04-oolama-serve.jpg)
+![ollama-serve](../../images/posts/04-oolama-serve.jpg)
 
 For making simply test for some programming question, I will use a `codellama:13b` model
 available [here](https://ollama.com/library/codellama:13b).
 More models with the description are available in the catalog [page](https://ollama.com/library?sort=popular).
 
-![ollama-codellama](../../images/05-oolama-codellama.jpg)
+![ollama-codellama](../../posts/images/05-oolama-codellama.jpg)
 
 That's all for that blog post. In next post I will try to show how the codellama works
 with simply queries.
