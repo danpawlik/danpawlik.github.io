@@ -21,14 +21,14 @@ params:
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
-  defaultTheme: dark # dark, light, auto
+  defaultTheme: auto # dark, light, auto
   disableThemeToggle: false
 
-  ShowReadingTime: true
+  ShowReadingTime: false
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
+  ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
@@ -54,25 +54,26 @@ params:
     icon: /apple-touch-icon.png
     iconHeight: 35
 
-  # profile-mode
-  profileMode:
-    enabled: false # needs to be explicitly set
-    title: ExampleSite
-    subtitle: "This is subtitle"
-    imageUrl: "<img location>"
-    imageWidth: 120
-    imageHeight: 120
-    imageTitle: my image
-    buttons:
-      - name: Posts
-        url: posts
-      - name: Tags
-        url: tags
-
-  # home-info mode
-  homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to Dan blog
+#  # profile-mode
+#  profileMode:
+#    enabled: false # needs to be explicitly set
+#    title: ExampleSite
+#    subtitle: "This is subtitle"
+#    imageUrl: "<img location>"
+#    imageWidth: 120
+#    imageHeight: 120
+#    imageTitle: my image
+#    buttons:
+#      - name: Posts
+#        url: posts
+#      - name: Tags
+#        url: tags
+#
+#  # home-info mode
+#  homeInfoParams:
+#    enabled: false
+#    Title: "Hi there \U0001F44B"
+#    Content: Welcome to Dan blog
 
   socialIcons:
     - name: x
@@ -92,6 +93,9 @@ params:
     hidden: true # hide everywhere but not in structured data
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: true # hide on single page
+    relative: true
+    responsiveImages: true
+    linkFullImages: true
 
   editPost:
     URL: "https://github.com/danpawlik/danpawlik.github.io/content"
