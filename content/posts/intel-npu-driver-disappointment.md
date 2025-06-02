@@ -38,6 +38,7 @@ editPost:
 # About Intel NPU driver
 
 According to the main project [page](https://github.com/intel/linux-npu-driver) on Github,
+
 ```raw
 
 Intel® NPU device is an AI inference accelerator integrated with Intel client CPUs,
@@ -60,7 +61,6 @@ So, the mystery of "why Intel's sales are falling more and more" has been
 solved - people buy/choose laptops hoping for developments in AI,
 and they get the answer: "well not now, or change the system :)".
 
-
 ## Looking for driver package
 
 After Googling, I spotted that there is a [project](https://copr.fedorainfracloud.org/coprs/xanderlent/intel-npu-driver/) available on Fedora COPR,
@@ -70,8 +70,7 @@ last released version is 1.17.0, where last on COPR is 1.16.0.
 Let's install those drivers and check how they work... Or maybe let's try to
 update it to newer version?
 
-
-### Driver installation
+### Driver installation - COPR way from xanderlent
 
 If the COPR repository contains packages for your system release (in my case
 it is Fedora 42), that's easy to configure, just:
@@ -128,7 +127,16 @@ intel-vsc-firmware-20250509-1.fc42.noarch
 libva-intel-media-driver-25.1.4-1.fc42.x86_64
 ```
 
-## Updating driver to newer version - COPR way
+Also by calling `dmesg` should be an information:
+
+```shell
+[    2.507891] intel_vpu 0000:00:0b.0: enabling device (0000 -> 0002)
+[    2.520155] intel_vpu 0000:00:0b.0: [drm] Firmware: intel/vpu/vpu_37xx_v0.0.bin, version: 20250306*MTL_CLIENT_SILICON-release*1130*ci_tag_ud202512_vpu_rc_20250306_1130*5064b5debc3
+[    2.520157] intel_vpu 0000:00:0b.0: [drm] Scheduler mode: OS
+[    2.609394] [drm] Initialized intel_vpu 1.0.0 for 0000:00:0b.0 on minor 0
+```
+
+## Updating driver to newer version - COPR way with my fork (not working)
 
 The COPR tool is very useful and many things are available public, even those
 if someone would like to create a "fork" of the repository.
@@ -170,7 +178,7 @@ issue. I can't promise that!
 
 ![allfails](../../posts/images/05-intel-npu-driver.jpg)
 
-## Updating driver to newer version - using Alien
+## Updating driver to newer version - using Alien (not working)
 
 Another approach to get the package for Red Hat familly system might be...
 convert the `.deb` packages into `.rpm` using `alien` tool - doing that
@@ -242,3 +250,7 @@ Checking how to solve the error: `file /usr/lib conclicts with file from package
 Someone already has such [issue](https://www.electricmonk.nl/log/2017/02/23/how-to-solve-rpms-created-by-alien-having-file-conflicts/),
 after applying that... It raises new issuse - building the rpm package
 requires some work, so it would be presented in other blog post entry.
+
+## Summary
+
+If you want to install the Intel NPU drivers, use COPR repository
