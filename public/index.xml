@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.146.7</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Jun 2025 11:01:10 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 17 Jun 2025 09:08:04 +0200</lastBuildDate>
     <atom:link href="https://danpawlik.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create simply script to verify Ansible yaml file</title>
+      <link>https://danpawlik.github.io/posts/simply-script-for-ansible/</link>
+      <pubDate>Tue, 17 Jun 2025 09:08:04 +0200</pubDate>
+      <guid>https://danpawlik.github.io/posts/simply-script-for-ansible/</guid>
+      <description>Desc Text.</description>
+    </item>
     <item>
       <title>Using Ollama</title>
       <link>https://danpawlik.github.io/posts/using-ollama/</link>
