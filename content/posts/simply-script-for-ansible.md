@@ -136,7 +136,7 @@ def main():
         client = ollama.Client()
         response = client.generate(model="codellama:13b", prompt=prompt)
 
-        print("=== ANALIZA CODELLAMA ===")
+        print("=== CODELLAMA ANALYSIS ===")
         print(response['response'])
 
 if __name__ == "__main__":
@@ -288,7 +288,7 @@ def main():
         client = ollama.Client()
         response = client.generate(model="codellama:13b", prompt=prompt)
 
-        print("=== ANALIZA CODELLAMA ===")
+        print("=== CODELLAMA ANALYSIS ===")
         print(response['response'])
 
 if __name__ == "__main__":
